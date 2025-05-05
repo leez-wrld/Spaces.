@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spaces - Premium Furniture</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background">
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+  </div>
+
+  <header class="transparent-nav">
+    <div class="container">
+      <div class="logo-container">
+        <div class="logo" id="nav-logo">
+          <span class="logo-text">Spaces</span>
+          <span class="logo-dot"></span>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="currency-selector">
+          <label for="currency-select"></label>
+          <select id="currency-select" aria-label="select a currency">
+            <option value="USD">$ USD</option>
+            <option value="EUR">€ EUR</option>
+            <option value="GBP">£ GBP</option>
+            <option value="ZAR">R ZAR</option>
+          </select>
+        </div>
+        <div class="theme-toggle" id="theme-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fBFBFB"><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/></svg>
+
+         <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fBFBFB"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg>
+        </div>
+        <div class="cart-icon" id="cart-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fBFBFB"><path d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z"/></svg>
+          <span class="cart-count">0</span>
+        </div>
+      </div>
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="fullscreen-hero parallax-container">
+      <div class="hero-bg parallax-bg"></div>
+      <div class="hero-content">
+        <div class="brand-container">
+          <h1 class="hero-brand" id="hero-brand">
+            <span class="logo-text">Spaces</span>
+            <span class="logo-dot"></span>
+          </h1>
+          <p class="hero-tagline">Curated furniture for modern living</p>
+          <a href="#products" class="btn hero-cta">Explore Collection</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <i class="fas fa-arrow-down"></i>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-item neu-card">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#8a6d5f"><path d="M222.1-178.31q-45.95 0-78.33-32.4-32.38-32.39-32.38-78.68H53.85v-432.92q0-23.53 17.08-40.61T111.54-780h558.61v157.39h95l141 188.3v144.92h-65.61q0 46.29-32.39 78.68-32.39 32.4-78.66 32.4-46.11 0-78.42-32.4-32.3-32.39-32.3-78.68H333.15q0 46.31-32.55 78.7-32.55 32.38-78.5 32.38Zm.17-45.38q27.27 0 46.38-19.12 19.12-19.11 19.12-46.38 0-27.27-19.12-46.39-19.11-19.11-46.38-19.11-27.27 0-46.39 19.11-19.11 19.12-19.11 46.39t19.11 46.38q19.12 19.12 46.39 19.12ZM99.23-334.77h21.62q12.76-28.54 39.96-47.23 27.19-18.69 60.75-18.69 32.78 0 60.57 18.81 27.79 18.8 40.56 47.11h302.08v-399.84H111.54q-4.62 0-8.46 3.84-3.85 3.85-3.85 8.46v387.54Zm630.42 111.08q27.27 0 46.39-19.12 19.11-19.11 19.11-46.38 0-27.27-19.11-46.39-19.12-19.11-46.39-19.11t-46.38 19.11q-19.12 19.12-19.12 46.39t19.12 46.38q19.11 19.12 46.38 19.12Zm-59.5-195.54h191l-119.46-158h-71.54v158ZM362.31-527.08Z"/></svg>
+            <h3>Free Shipping</h3>
+            <p>On all orders over <span class="currency-display" data-base-value="500">$500</span></p>
+          </div>
+          <div class="feature-item neu-card">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#8a6d5f"><path d="m390.39-420.46 34.07-109.38-89.23-66.93h109.35L480-710l34.42 113.23h110.35l-88.85 66.93L569-420.46 480-488l-89.61 67.54ZM262.85-70.77v-282.85q-43.08-43.15-62.96-96.84Q180-504.15 180-560q0-126.77 86.62-213.38Q353.23-860 480-860t213.38 86.62Q780-686.77 780-560q0 55.85-19.89 109.54-19.88 53.69-62.96 96.84v282.85L480-140.17l-217.15 69.4Zm217.1-234.62q106.74 0 180.7-73.91 73.96-73.92 73.96-180.65 0-106.74-73.91-180.7-73.92-73.96-180.65-73.96-106.74 0-180.7 73.91-73.96 73.92-73.96 180.65 0 106.74 73.91 180.7 73.92 73.96 180.65 73.96ZM308.23-133.23 480-186.31l171.77 53.08v-182.93q-38.08 29-82.73 42.58Q524.38-260 480-260q-44.38 0-89.04-13.58-44.65-13.58-82.73-42.58v182.93ZM480-225Z"/></svg>
+            <h3>Quality Guarantee</h3>
+            <p>5-year warranty on all products</p>
+          </div>
+          <div class="feature-item neu-card">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#8a6d5f"><path d="M447.92-142.77q-113.77-11.15-190.84-96Q180-323.62 180-439.38q0-68.93 31.08-130.2 31.07-61.26 86.23-102.34l32.23 32.61q-49.85 33-77 86.46-27.15 53.47-27.15 113.47 0 96.92 63.49 167.99 63.5 71.08 159.04 83.24v45.38Zm65.39.77v-45.39q96.15-14.3 159.04-84.88 62.88-70.58 62.88-167.11 0-106.7-73.96-180.66T480.62-694h-26.54l65.77 65.77-32.62 32.61-121.07-121.07 121.07-121.08 32.62 32.62-65.77 65.77h26.54q125.53 0 212.76 87.73 87.23 87.73 87.23 212.27 0 115.76-76.76 200.42-76.77 84.65-190.54 96.96Z"/></svg>
+            <h3>Easy Returns</h3>
+            <p>30-day money-back guarantee</p>
+          </div>
+          <div class="feature-item neu-card">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#8a6d5f"><path d="M455.39-140v-45.39h306.92q5 0 8.65-3.07 3.65-3.08 3.65-8.08v-294.38q0-119.61-86.31-201.46-86.32-81.85-208.26-81.85t-208.3 81.85q-86.35 81.85-86.35 201.46v235.53H170q-28.77 0-49.38-20.03Q100-295.46 100-324.23v-77.69q0-19.46 11.08-35.66 11.08-16.19 28.92-26.03l1.85-51.08q4.92-65.31 33.92-121t74.38-96.96q45.39-41.27 104.77-64.31Q414.31-820 480-820t124.77 23.04q59.08 23.04 104.77 64t74.38 96.65q28.69 55.7 34.23 121l1.85 50.08q17.46 8.23 28.73 23.54Q860-426.38 860-407.54v89.31q0 18.84-11.27 34.15-11.27 15.31-28.73 23.54v64q0 23.51-17.05 40.02Q785.9-140 762.31-140H455.39Zm-87.88-276.54q-11.66 0-19.78-7.91-8.11-7.91-8.11-19.58 0-11.66 8.29-19.59 8.3-7.92 19.97-7.92 11.66 0 19.77 8.11 8.12 8.1 8.12 19.77 0 11.66-8.3 19.39t-19.96 7.73Zm224.61 0q-11.66 0-19.77-7.91-8.12-7.91-8.12-19.58 0-11.66 8.3-19.59 8.3-7.92 19.96-7.92t19.78 8.11q8.11 8.1 8.11 19.77 0 11.66-8.29 19.39-8.3 7.73-19.97 7.73ZM254.85-472q-6.23-97.92 60.92-167.58 67.15-69.65 166.39-69.65 81.45 0 142.57 52.31 61.12 52.3 74.73 132.53-83.61-1-153.65-45.57-70.04-44.58-108.29-119.19-15.06 74.61-63.67 131.92-48.62 57.31-119 85.23Z"/></svg>
+            <h3>24/7 Support</h3>
+            <p>Expert assistance always available</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products">
+      <div class="container">
+        <h2 class="section-title">Our Collection</h2>
+        
+        <div class="filter-container">
+  <!-- Mobile Filter Toggle Button -->
+  <button class="filter-toggle neu-card" id="filter-toggle">
+    <i class="fas fa-sliders-h"></i>
+    <span>Filters</span>
+    <i class="fas fa-chevron-down"></i>
+  </button>
+  
+  <!-- Filter Content -->
+  <div class="filters neu-card" id="filter-content">
+    <div class="filter-header">
+      <h3>Filter Products</h3>
+      <button class="close-filter" id="close-filter">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    
+    <div class="filter-body">
+      <div class="filter-group">
+        <label for="category-filter">Category</label>
+        <div class="select-wrapper" >
+          <select id="category-filter" aria-label="Filter products by categories">
+            <option value="all">All Categories</option>
+            <option value="living">Living Room</option>
+            <option value="dining">Dining Room</option>
+            <option value="bedroom">Bedroom</option>
+            <option value="office">Office</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="filter-group">
+        <label for="price-filter">Price Range</label>
+        <div class="select-wrapper">
+          <select id="price-filter" aria-label="Filter products by price">
+            <option value="all">All Prices</option>
+            <option value="0-500">0 - 500</option>
+            <option value="500-1000">500 - 1000</option>
+            <option value="1000+">1000+</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="filter-group">
+        <label for="sort-by">Sort By</label>
+        <div class="select-wrapper">
+          <select id="sort-by" aria-label="Sort by  price or name">
+            <option value="default">Featured</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="name">Name: A to Z</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Living Room Products - Horizontal Scrolling -->
+        <div class="product-category-section">
+          <h3 class="category-title">Living Room</h3>
+          <div class="product-row scrollbar-hide">
+            <div id="living-room-products" class="product-row-inner">
+              <!-- Products will be dynamically inserted here -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Dining Room Products - Horizontal Scrolling -->
+        <div class="product-category-section">
+          <h3 class="category-title">Dining Room</h3>
+          <div class="product-row scrollbar-hide">
+            <div id="dining-room-products" class="product-row-inner">
+              <!-- Products will be dynamically inserted here -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Posters - Horizontal Scrolling -->
+        <div class="product-category-section">
+          <h3 class="category-title">Wall Art & Posters</h3>
+          <div class="product-row scrollbar-hide">
+            <div id="posters-products" class="product-row-inner">
+              <!-- Posters will be dynamically inserted here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase parallax-container">
+      <div class="showcase-bg parallax-bg"></div>
+      <div class="container">
+        <div class="showcase-content neu-card">
+          <h2>Designed for Comfort</h2>
+          <p>Our furniture combines aesthetics with ergonomics for the perfect balance of style and comfort.</p>
+          <a href="#products" class="btn">Explore More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="collections" class="collections">
+      <div class="container">
+        <h2 class="section-title">Featured Collections</h2>
+        <div class="collection-row scrollbar-hide">
+          <div class="collection-row-inner">
+            <div class="collection-card neu-card">
+              <div class="collection-image">
+                <img src="/placeholder.svg?height=300&width=400" alt="Minimalist Collection">
+              </div>
+              <div class="collection-info">
+                <h3>Minimalist Collection</h3>
+                <p>Clean lines and functional design for the modern home</p>
+                <a href="#" class="btn-outline">View Collection</a>
+              </div>
+            </div>
+            <div class="collection-card neu-card">
+              <div class="collection-image">
+                <img src="/placeholder.svg?height=300&width=400" alt="Scandinavian Collection">
+              </div>
+              <div class="collection-info">
+                <h3>Scandinavian Collection</h3>
+                <p>Simple, beautiful, and functional designs inspired by nature</p>
+                <a href="#" class="btn-outline">View Collection</a>
+              </div>
+            </div>
+            <div class="collection-card neu-card">
+              <div class="collection-image">
+                <img src="/placeholder.svg?height=300&width=400" alt="Industrial Collection">
+              </div>
+              <div class="collection-info">
+                <h3>Industrial Collection</h3>
+                <p>Raw materials and vintage aesthetics for urban spaces</p>
+                <a href="#" class="btn-outline">View Collection</a>
+              </div>
+            </div>
+            <div class="collection-card neu-card">
+              <div class="collection-image">
+                <img src="/placeholder.svg?height=300&width=400" alt="Bohemian Collection">
+              </div>
+              <div class="collection-info">
+                <h3>Bohemian Collection</h3>
+                <p>Eclectic patterns and textures for a free-spirited living space</p>
+                <a href="#" class="btn-outline">View Collection</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="testimonial-slider" id="testimonial-slider">
+          <!-- Testimonials will be dynamically inserted here -->
+        </div>
+        <div class="testimonial-controls">
+          <button id="prev-testimonial" class="testimonial-control" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+          <button id="next-testimonial" class="testimonial-control" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter parallax-container">
+      <div class="newsletter-bg parallax-bg"></div>
+      <div class="container">
+        <div class="newsletter-content neu-card">
+          <h2>Stay Updated</h2>
+          <p>Subscribe to our newsletter for exclusive offers and interior design tips</p>
+          <form class="newsletter-form" id="newsletter-form" name="newsletter-form" autocomplete="on">
+            <input type="email" placeholder="Your email address" required autocomplete="on">
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="cart-sidebar neu-card" id="cart-sidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="close-cart" id="close-cart" aria-label="Close cart"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <!-- Cart items will be dynamically inserted here -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cart-total-price">$0.00</span>
+      </div>
+      <button class="btn checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <div class="checkout-modal" id="checkout-modal">
+    <div class="checkout-content neu-card">
+      <div class="checkout-header">
+        <h3>Checkout</h3>
+        <button class="close-checkout" id="close-checkout"><i class="fas fa-times"></i></button>
+      </div>
+      <form id="checkout-form" name="checkout-form" autocomplete="on">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required autocomplete="on">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required autocomplete="on">
+        </div>
+        <div class="form-group">
+          <label for="address">Shipping Address</label>
+          <textarea id="address" required autocomplete="on"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="card">Card Number</label>
+          <input type="text" id="card" placeholder="1234 5678 9012 3456" required autocomplete="on">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="expiry">Expiry Date</label>
+            <input type="text" id="expiry" placeholder="MM/YY" required autocomplete="on">
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" placeholder="123" required autocomplete="on">
+          </div>
+        </div>
+        <button type="submit" class="btn">Complete Purchase</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <footer class="neu-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="logo">
+            <span class="logo-text">Spaces</span>
+            <span class="logo-dot"></span>
+          </div>
+          <p>We provide premium furniture with exceptional quality and customer service since 2025.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Furniture Ave, Waterkloof</p>
+          <p><i class="fas fa-envelope"></i> info@spaces.com</p>
+          <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Spaces. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
